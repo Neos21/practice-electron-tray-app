@@ -1,0 +1,42 @@
+{
+  "name": "practice-electron-tray-app",
+  "version": "0.0.0",
+  "description": "Practice Electron Tray App",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ./",
+    "clear": "rm -rf ./dist",
+    "build": "electron-builder -mw",
+    "build-mac": "electron-builder -m",
+    "build-win": "electron-builder -w"
+  },
+  "author": "Neo <neos21@gmail.com> (https://neos21.net/)",
+  "license": "MIT",
+  "homepage": "https://github.com/Neos21/practice-electron-tray-app#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neos21/practice-electron-tray-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neos21/practice-electron-tray-app/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Neos21"
+  },
+  "devDependencies": {
+    "electron": "11.0.3",
+    "electron-builder": "22.9.1"
+  },
+  "build": {
+    "productName": "Practice Electron Tray App",
+    "appId": "net.neos21.practice.electron.tray.app.1",
+    "mac": {
+      "target": "dir"
+    },
+    "win": {
+      "target": "dir"
+    }
+  }
+}
